@@ -1,0 +1,178 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease; /* Added for smooth color transition */
+  /* background-image: url(img/game\ backround.webp) ; */
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* background-color: black; */
+  /* background-color: gray; */
+}
+
+.container {
+  text-align: center;
+  /* border: 7px solid; */
+  width: 650px;
+  height: 850px;
+  margin: 2em auto;
+  background-color: #ffffff;
+  box-shadow: -15px 0 0 0 black, 15px 0 0 0 black, 0 -15px 0 0 black,
+    0 15px 0 0 black;
+  background-image: url(img/backround.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#result {
+  font-size: 18px;
+}
+
+/* ! buttons */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.rev {
+  width: 195px;
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+.rev:hover {
+  transform: scale(1.5) rotate(0deg);
+}
+
+.rev:active {
+  transform: scale(1) rotate(40deg);
+}
+
+.reset {
+  width: 65px;
+  transition: transform 0.9s linear;
+}
+
+.reset:hover {
+  transform: scale(1) rotate(360deg);
+}
+
+.info {
+  transition: transform 0.6s linear;
+  width: 65px;
+}
+
+.info:hover {
+  transform: scale(1.5) rotate(0deg);
+}
+
+.coin {
+  transition: transform 1s ease-in-out; /* Add a smooth transition effect */
+  width: 65px;
+}
+
+.coin:hover {
+  transform: scale(1.7) rotateX(380deg);
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower-buttons {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 45px 0 45px;
+}
+
+/* hoe spel jij dit  */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.popup-slide {
+  display: none;
+  text-align: center;
+}
+
+.popup-slide.active-slide {
+  display: block;
+}
+
+.close-btn {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.popup-slide img {
+  max-width: 80%;
+  max-height: 60vh;
+}
+
+.popup-container p {
+  color: #000;
+}
+
+.card {
+  background-color: aqua;
+  position: relative;
+  width: 900px;
+  height: 650px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #f30f0f, -20px -20px 60px #000000;
+}
+
+/* hoe spel jij dit  */
+
+.home {
+  width: 65px;
+  display: flex;
+  margin-bottom: 745px;
+  margin-left: 5px;
+}
+
+/* resposnive  */
+
+/* 
+
+@media screen and (max-width: 1100px){
+
+  .game-box{
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    width: 900px;
+    height: 700px;
+    text-align: center;
+    background-color: rgb(151, 201, 201);
+    border: solid 12px rgb(255, 0, 0);
+    border-radius: 15px;
+  }
+  }
+
+  */
